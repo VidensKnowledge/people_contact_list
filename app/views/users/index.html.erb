@@ -3,7 +3,7 @@
 <%= link_to "Create New User", new_user_path %>
 
 <% @users.each do |user| %>
-  <h2> <%= user.first_name %> <%= user.last_name %> </h2> # Needs last name next to first name
+  <h2> <%= user.first_name %> <%= user.last_name %> </h2>
   <%= link_to "Show Information", user_path(user)%>
   <%= link_to "Edit User", edit_user_path(user) %>
   <%= link_to "DELETE", user_path(user), method: :delete%>
